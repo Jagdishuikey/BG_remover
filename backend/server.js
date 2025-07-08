@@ -3,6 +3,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import { connect } from 'mongoose';
 import connectDB from './config/db.js';
+import userRouter from './routes/userRoute.js';
 
 dotenv.config(); 
 
@@ -23,6 +24,10 @@ try {
 } catch (error) {
     console.error('Error starting the server:', error);
 }
+
+app.use('/api/user',userRouter);
+    
+
 
 //middleware
 
