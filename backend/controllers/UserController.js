@@ -1,5 +1,5 @@
 import {Webhook} from 'svix'
-import userModel from '../models/UserModel.js';
+import userModel from '../models/userModel.js';
 
 //Api controller function to manage db
 
